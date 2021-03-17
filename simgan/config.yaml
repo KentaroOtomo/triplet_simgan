@@ -1,0 +1,186 @@
+data_directory:
+  dirname: '../data/'
+
+synthetic_image_directory:
+  dirname : '../data/imgs_ue/'
+
+synthetic_json_directory:
+  dirname : '../data/json_ue/'
+
+eval_synthetic_image_directory:
+  dirname : '../data/imgs_ue_eval/'
+
+eval_synthetic_json_directory:
+  dirname : '../data/json_ue_eval/'
+  
+real_image_directory:
+  dirname : '../data/real_image/'
+
+eval_real_image_directory:
+  dirname : '../data/real_image_eval/'
+  
+real_csv:
+  csvname : 'real.csv'
+  
+synthetic_csv:
+  csvname : 'synthetic.csv'
+
+log_directory:
+  dirname : '../log/'
+
+save_image_directory:
+  dirname : '../image/'
+  
+optimizer_path:
+  pathname : 'optimizer_status.pkl'
+  
+test_output_csv:
+  csvname : '../test.csv'
+
+test_output_directory:
+  dirname : '../test_output/'
+
+edge_kernel_size:
+  size : 8  
+
+nstack:
+  param: 3
+
+nfeatures:
+  param : 32
+
+nlandmarks:
+  param : 34
+
+refiner_lr:
+  param : 0.0002
+  
+discriminator_lr:
+  param : 0.0001
+
+classifier_lr:
+  param : 0.0001
+
+regressor_lr:
+  param : 0.0004
+
+gaze_estimator_lr:
+  param : 0.0004
+
+gpu_num:
+  num : [0]
+  
+num_worker:
+  num : 16
+
+log_interval:
+  num : 500
+  
+train_iteration:
+  num : 150000
+  
+batch_size:
+  size : 1
+
+refiner_pretrain_iteration:
+  num : 2000
+
+discriminator_pretrain_iteration:
+  num : 1000
+
+classifier_pretrain_iteration:
+  num : 2000
+  
+regressor_pretrain_iteration:
+  num : 12000
+
+gaze_estimator_pretrain_iteration:
+  num : 12000
+  
+updates_refiner_per_step:
+  num : 1
+  
+updates_discriminator_per_step:
+  num : 2
+  
+updates_classifier_per_step:
+  num : 1
+
+updates_regressor_per_step:
+  num : 1
+  
+updates_gaze_estimator_per_step:
+  num : 1
+
+print_interval:
+  num : 100
+  
+save_interval:
+  num : 5000
+
+log:
+  bool : True
+  
+train:
+  bool : 'train'
+
+checkpoint_path:
+  pathname : '../checkpoint_path/'
+  
+global_discriminator1_path:
+  pathname : 'G_D1_%d.pkl'  
+
+local_discriminator1_path:
+  pathname : 'L_D1_%d.pkl'
+  
+global_discriminator2_path:
+  pathname : 'G_D2_%d.pkl'  
+  
+local_discriminator2_path:
+  pathname : 'L_D2_%d.pkl'  
+
+pretrain_global_discriminator1_path:
+  pathname : 'G_D1_0.pkl'  
+
+pretrain_local_discriminator1_path:
+  pathname : 'L_D1_0.pkl'
+  
+pretrain_global_discriminator2_path:
+  pathname : 'G_D2_0.pkl'  
+  
+pretrain_local_discriminator2_path:
+  pathname : 'L_D2_0.pkl'
+  
+refiner1_path:
+  pathname : 'R1_%d.pkl'
+  
+refiner2_path:
+  pathname : 'R2_%d.pkl'
+  
+pretrain_refiner1_path:
+  pathname : 'R1_0.pkl'
+  
+pretrain_refiner2_path:
+  pathname : 'R2_0.pkl'
+  
+classifier_path:
+  pathname : 'C_%d.pkl'
+
+pretrain_classifier_path:
+  pathname : 'C_0.pkl'  
+  
+regressor_path:
+  pathname : 'Reg_%d.pkl'
+  
+pretrain_regressor_path:
+  pathname : 'Reg_0.pkl'
+  
+gaze_estimator_path:
+  pathname : 'Gaze_%d.pkl'
+  
+pretrain_gaze_estimator_path:
+  pathname : 'Gaze_0.pkl'
+
+  
+
+  
