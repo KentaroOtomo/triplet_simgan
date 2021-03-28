@@ -125,7 +125,7 @@ class Real_Dataset(Dataset):
 		label = torch.zeros(1, 5).type(torch.LongTensor)
 		label[0, label_num] = 1
 		
-		image_file = (str(file) + ".png")
+		image_file = "real" + (str(file) + ".png")
 		image_files = Image.open(self.img_path + image_file)
 		r_mean, r_variance = self.calc_mean(image_files)
 		image_as_tensor = self.data_transform(image_files)
